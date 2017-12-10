@@ -1,3 +1,16 @@
+// A test case to test your function with
+.data
+Array: .byte 1, 2, 3
+
+.text
+.global _start
+_start:
+    ldr r0, =3
+    ldr r1, =Array
+    bl max
+    b _start        // End of testing code
+
+// Return maximum element of unsigned array
 max:
     LDR R3, =0x80000000 // Smallest signed integer
 LOOP:
