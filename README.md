@@ -2,6 +2,8 @@
 
 By: Morris J Chen and Daniil Orekhov
 
+Other contributors: Michael de Biasio
+
 <p>
   <b>
     Solutions to ASMBits ARMv7 problem set.
