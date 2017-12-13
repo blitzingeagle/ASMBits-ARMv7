@@ -7,10 +7,7 @@ _start:
 
 // Convert unsigned 32 bit to 16 bit, with saturation
 saturate:
-    MOV R1, #1
-    LSL R1, #16
+    LDR R1, =0x0000FFFF
     CMP R0, R1
-    SUBHS R0, R1, #1	// unsigned >=
-    LSLLO R0, #16		// unsigned <
-    LSRLO R0, #16
+    MOVHS R0, R1
     BX LR
